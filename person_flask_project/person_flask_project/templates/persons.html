@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <style>
+        table {
+            border: 3px solid brown;
+        }
+
+        td {
+            border: 2px solid grey;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Persons List</h1>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Gender</th>
+        </tr>
+        {% for person in persons %}
+        <tr>
+            <td>{{ person.id }}</td>
+            <td>{{ person.name }}</td>
+            <td>{{ person.gender }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+
+</html>
